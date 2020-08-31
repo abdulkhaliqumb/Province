@@ -63,16 +63,24 @@ object ProvinceData {
             ,"Bandung"
             ,"19 Agustus 1945"
         ),
-        arrayOf("jateng_logo"
-            ,"Propinsi Jawa Tengah"
-            ,"Jawa Tengah adalah sebuah provinsi Indonesia yang terletak di bagian tengah Pulau Jawa. Ibu kotanya adalah Semarang. Provinsi ini berbatasan dengan Provinsi Jawa Barat di sebelah barat, Samudra Hindia dan Daerah Istimewa Yogyakarta di sebelah selatan, Jawa Timur di sebelah timur, dan Laut Jawa di sebelah utara. Wikipedia"
-            ,"32.801 km²"
-            ,"Gambang Suling, Gundhul Pacul, Ilir-ilir"
-            ,"Daftar: Kabupaten: 29; Kota: 10;\n" +
-                    "Kecamatan: 534; Kelurahan: 769\n" +
+        arrayOf(
+            "jateng_logo"
+            ,
+            "Propinsi Jawa Tengah"
+            ,
+            "Jawa Tengah adalah sebuah provinsi Indonesia yang terletak di bagian tengah Pulau Jawa. Ibu kotanya adalah Semarang. Provinsi ini berbatasan dengan Provinsi Jawa Barat di sebelah barat, Samudra Hindia dan Daerah Istimewa Yogyakarta di sebelah selatan, Jawa Timur di sebelah timur, dan Laut Jawa di sebelah utara. Wikipedia"
+            ,
+            "32.801 km²"
+            ,
+            "Gambang Suling, Gundhul Pacul, Ilir-ilir"
+            ,
+            "Daftar: Kabupaten: 29; Kota: 10;" +
+                    "Kecamatan: 534; Kelurahan: 769 " +
                     "Desa: 7.809;"
-            ,"Semarang"
-            ,"15 Agustus 1950"
+            ,
+            "Semarang"
+            ,
+            "15 Agustus 1950"
         ),
         arrayOf("kaltim_logo"
             ,"Propinsi Kalimantan Timur"

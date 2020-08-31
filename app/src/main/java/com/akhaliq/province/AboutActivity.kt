@@ -1,9 +1,9 @@
 package com.akhaliq.province
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 
@@ -23,8 +23,8 @@ class AboutActivity : AppCompatActivity() {
             .load(R.drawable.profile)
             .apply(RequestOptions())
             .into(imgProfile)
-        tvName.text="Abdul Khaliq "
-        tvEmail.text="khaliq.umb@gmail.com"
+        tvName.text = "Abdul Khaliq Arrachman "
+        tvEmail.text = "khaliq.umb@gmail.com"
 
     }
     override fun onSupportNavigateUp(): Boolean {

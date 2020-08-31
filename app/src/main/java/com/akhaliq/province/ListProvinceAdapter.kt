@@ -6,9 +6,10 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
-import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.bumptech.glide.load.resource.bitmap.CenterCrop
+import com.bumptech.glide.load.resource.bitmap.RoundedCorners
 import com.bumptech.glide.request.RequestOptions
 
 class ListProvinceAdapter(val listProvince: ArrayList<Province>) : RecyclerView.Adapter<ListProvinceAdapter.ListViewHolder>(){
@@ -26,9 +27,15 @@ class ListProvinceAdapter(val listProvince: ArrayList<Province>) : RecyclerView.
         val (imageProvince, namaPropinsi, keterangan, luas, laguDaerah,jumlahSatuanPemerintahan,ibuKota,hariJadi) = listProvince[position]
 
         Glide.with(holder.itemView.context)
-            .load(holder.itemView.context.getResources().getIdentifier(imageProvince, "drawable", holder.itemView.context.getPackageName()))
-            .apply(RequestOptions().override(65, 65))
-            .into(holder.imgLogo);
+            .load(
+                holder.itemView.context.resources.getIdentifier(
+                    imageProvince,
+                    "drawable",
+                    holder.itemView.context.packageName
+                )
+            )
+            .apply(RequestOptions().transforms(CenterCrop(), RoundedCorners(5)))
+            .into(holder.imgLogo)
 
         holder.tvNamaPropinsi.text = namaPropinsi
         holder.tvIbukota.text = "Ibu Kota "+ibuKota  //+" "+imageProvince
