@@ -84,27 +84,43 @@ object ProvinceData {
             ,"Samarinda"
             ,"1 Januari 1957"
         ),
-        arrayOf("sulsel_logo"
-            ,"Propinsi Sulawesi Selatan test"
-            ,"Sulawesi Selatan (disingkat Sulsel) adalah sebuah provinsi di Indonesia yang terletak di bagian selatan Sulawesi. Ibu kotanya adalah Makassar. Provinsi ini berbatasan dengan Sulawesi Tengah dan Sulawesi Barat di utara, Teluk Bone dan Sulawesi Tenggara di timur, Selat Makassar di barat dan Laut Flores di selatan.  sulselprov.go.id"
-            ,"45.764,53 km²"
-            ,"Angin Mamiri"
-            ,"Daftar: Kabupaten: 21; Kota: 3;\n" +
-                    "Kecamatan: 307; Kelurahan: 92\n"+
+        arrayOf(
+            "sulsel_logo"
+            ,
+            "Propinsi Sulawesi Selatan "
+            ,
+            "Sulawesi Selatan (disingkat Sulsel) adalah sebuah provinsi di Indonesia yang terletak di bagian selatan Sulawesi. Ibu kotanya adalah Makassar. Provinsi ini berbatasan dengan Sulawesi Tengah dan Sulawesi Barat di utara, Teluk Bone dan Sulawesi Tenggara di timur, Selat Makassar di barat dan Laut Flores di selatan.  sulselprov.go.id"
+            ,
+            "45.764,53 km²"
+            ,
+            "Angin Mamiri"
+            ,
+            "Daftar: Kabupaten: 21; Kota: 3;\n" +
+                    "Kecamatan: 307; Kelurahan: 92\n" +
                     "Desa:  2.255;"
-            ,"Makassar"
-            ,"19 Oktober 1669"
+            ,
+            "Makassar"
+            ,
+            "19 Oktober 1669"
         ),
-        arrayOf("maluku_logo"
-            ,"Propinsi Maluku"
-            ,"Maluku adalah sebuah provinsi yang meliputi bagian selatan Kepulauan Maluku, Indonesia. Provinsi ini berbatasan dengan Laut Seram di utara, Samudra Hindia dan Laut Arafura di selatan, Papua di timur, dan Sulawesi di barat. Ibu kota dan kota terbesarnya ialah Ambon. Wikipedia"
-            ,"62.946 km²"
-            ,"Ambon Manise, Waktu hujan sore sor"
-            ,"Daftar: Kabupaten: 9; Kota: 2;\n" +
-                    "Kecamatan: 118 ; Kelurahan: 35\n"+
+        arrayOf(
+            "maluku_logo"
+            ,
+            "Propinsi Maluku"
+            ,
+            "Maluku adalah sebuah provinsi yang meliputi bagian selatan Kepulauan Maluku, Indonesia. Provinsi ini berbatasan dengan Laut Seram di utara, Samudra Hindia dan Laut Arafura di selatan, Papua di timur, dan Sulawesi di barat. Ibu kota dan kota terbesarnya ialah Ambon. Wikipedia"
+            ,
+            "62.946 km²"
+            ,
+            "Ambon Manise, Waktu hujan sore sore"
+            ,
+            "Daftar: Kabupaten: 9; Kota: 2;\n" +
+                    "Kecamatan: 118 ; Kelurahan: 35\n" +
                     "Desa:  1.200;"
-            ,"Ambon"
-            ,"19 Agustus 1945"
+            ,
+            "Ambon"
+            ,
+            "19 Agustus 1945"
         ),
         arrayOf("papua_logo"
             , "Propinsi Papua"
