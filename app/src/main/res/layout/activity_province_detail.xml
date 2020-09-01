@@ -185,6 +185,7 @@
                     android:text=" :  " />
 
                 <TextView
+
                     android:id="@+id/tvHariJadi"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"

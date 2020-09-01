@@ -10,7 +10,7 @@ import com.bumptech.glide.request.RequestOptions
 class AboutActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_profile)
+        setContentView(R.layout.activity_about)
 
         val actionbar = supportActionBar
         actionbar!!.title = "Profile"

@@ -8,9 +8,6 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.bumptech.glide.load.resource.bitmap.CenterCrop
-import com.bumptech.glide.load.resource.bitmap.RoundedCorners
-import com.bumptech.glide.request.RequestOptions
 
 class ListProvinceAdapter(val listProvince: ArrayList<Province>) : RecyclerView.Adapter<ListProvinceAdapter.ListViewHolder>(){
 
@@ -34,8 +31,9 @@ class ListProvinceAdapter(val listProvince: ArrayList<Province>) : RecyclerView.
                     holder.itemView.context.packageName
                 )
             )
-            .apply(RequestOptions().transforms(CenterCrop(), RoundedCorners(5)))
+           // .apply(RequestOptions().transforms(CenterCrop(), RoundedCorners(25)))
             .into(holder.imgLogo)
+
 
         holder.tvNamaPropinsi.text = namaPropinsi
         holder.tvIbukota.text = "Ibu Kota "+ibuKota  //+" "+imageProvince
