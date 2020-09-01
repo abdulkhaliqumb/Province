@@ -7,7 +7,6 @@ import android.text.TextWatcher
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.EditText
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -23,8 +22,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         val actionbar = supportActionBar
-        actionbar!!.title = "Home"
-        actionbar.setDisplayHomeAsUpEnabled(true)
+
 
         val dataSearch: EditText = findViewById(R.id.dataSearch)
         rvProvince = findViewById(R.id.rvProvince)

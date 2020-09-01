@@ -3,8 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="10dp"
+    android:layout_marginLeft="3dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="3dp"
     android:orientation="vertical"
+    android:background="@color/colorWhite"
     tools:context=".MainActivity">
 
     <LinearLayout xmlns:tools="http://schemas.android.com/tools"
@@ -32,6 +35,7 @@
             <EditText
                 android:id="@+id/dataSearch"
                 android:layout_width="fill_parent"
+                android:fontFamily="@font/quicksand"
                 android:layout_height="wrap_content"
                 android:hint="Searching Province Name " />
         </LinearLayout>
@@ -40,6 +44,7 @@
             android:id="@+id/rvProvince"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+
             tools:listitem="@layout/item_row_province" />
 
 

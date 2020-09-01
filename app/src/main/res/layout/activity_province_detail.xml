@@ -4,8 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="10dp"
+    android:background="@color/colorWhite"
     android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
     tools:context=".ProvinceDetailActivity">
 
     <LinearLayout
@@ -15,13 +17,13 @@
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="16dp">
+            android:layout_height="match_parent">
 
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/quicksand"
                 android:text="Propinsi Indonesia"
                 android:textAlignment="center"
                 android:textSize="16sp"
@@ -33,6 +35,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
+                android:fontFamily="@font/quicksand_bold"
                 android:text="Papua"
                 android:textAlignment="center"
                 android:textSize="20sp"
@@ -56,6 +59,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/quicksand_bold"
             android:text="Keterangan"
             android:textSize="16sp"
             android:textStyle="bold"
@@ -67,6 +71,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
+            android:fontFamily="@font/quicksand"
             android:justificationMode="inter_word"
             android:text="Detail"
             tools:layout_editor_absoluteX="43dp"
@@ -86,6 +91,7 @@
                 <TextView
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/quicksand_bold"
                     android:text="Luas"
                     android:textStyle="bold" />
 
@@ -98,6 +104,7 @@
                     android:id="@+id/tvLuas"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:fontFamily="@font/quicksand"
                     android:text="xxxisi Luas" />
             </TableRow>
 
@@ -108,6 +115,7 @@
                 <TextView
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/quicksand_bold"
                     android:text="Lagu Daerah"
                     android:textStyle="bold" />
 
@@ -120,6 +128,7 @@
                     android:id="@+id/tvLaguDaerah"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:fontFamily="@font/quicksand"
                     android:text="xxxisi Luas" />
             </TableRow>
 
@@ -130,6 +139,7 @@
                 <TextView
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/quicksand_bold"
                     android:text="Jumlah Satuan Pemerintahan"
                     android:textStyle="bold" />
 
@@ -141,9 +151,9 @@
                 <TextView
                     android:id="@+id/tvJumlahSatuanPemerintahan"
                     android:layout_width="0dp"
-                    android:layout_weight="1"
                     android:layout_height="wrap_content"
-                    android:justificationMode="inter_word"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/quicksand"
                     android:text="xxxisi Luas sdaf sadj flskdjfvbxc dsaf  afafdas adfdasf  bvcbbcxvbbcxvbbcvbvcxbcvbbcvbvb" />
             </TableRow>
 
@@ -154,6 +164,7 @@
                 <TextView
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/quicksand_bold"
                     android:text="Ibu Kota"
                     android:textStyle="bold" />
 
@@ -166,6 +177,7 @@
                     android:id="@+id/tvIbuKota"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:fontFamily="@font/quicksand"
                     android:text="xxxisi Luas" />
             </TableRow>
 
@@ -176,6 +188,7 @@
                 <TextView
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/quicksand_bold"
                     android:text="Hari Jadi"
                     android:textStyle="bold" />
 
@@ -189,6 +202,7 @@
                     android:id="@+id/tvHariJadi"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:fontFamily="@font/quicksand"
                     android:text="xxxisi Luas" />
             </TableRow>
 

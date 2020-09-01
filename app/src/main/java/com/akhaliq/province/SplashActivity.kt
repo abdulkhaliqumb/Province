@@ -19,6 +19,7 @@ class SplashActivity : BaseActivity()  {
         private fun gotoLoginActivity() {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
+            finish()
         }
 
 
