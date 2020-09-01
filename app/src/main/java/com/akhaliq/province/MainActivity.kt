@@ -22,6 +22,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         val actionbar = supportActionBar
+        actionbar!!.title = "Home"
 
 
         val dataSearch: EditText = findViewById(R.id.dataSearch)
