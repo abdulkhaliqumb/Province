@@ -3,29 +3,25 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginLeft="3dp"
-    android:layout_marginRight="3dp"
     android:background="@color/colorWhite"
-    android:paddingLeft="16dp"
-    android:paddingRight="16dp"
-    app:cardCornerRadius="3dp"
-    app:cardElevation="3dp"
-    app:cardUseCompatPadding="true">
+    app:cardUseCompatPadding="false">
 
     <RelativeLayout
         android:layout_width="wrap_content"
-        android:paddingBottom="5dp"
+        android:background="@color/colorWhite"
         android:layout_height="wrap_content">
 
         <ImageView
             android:id="@+id/imgLogo"
-            android:layout_width="75dp"
+            android:layout_width="65dp"
             android:layout_height="65dp"
             android:layout_margin="5dp"
             android:layout_marginEnd="16dp"
             android:layout_marginRight="16dp"
+            android:background="@drawable/ic_bg_bayang"
             android:adjustViewBounds="true"
             android:src="@drawable/aceh_logo" />
+
 
         <LinearLayout
             android:layout_width="match_parent"

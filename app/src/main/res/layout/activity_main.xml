@@ -3,48 +3,40 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginLeft="3dp"
     android:layout_marginTop="10dp"
-    android:layout_marginRight="3dp"
-    android:orientation="vertical"
     android:background="@color/colorWhite"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    <LinearLayout
         android:id="@+id/activity_main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <ImageView
-            android:layout_width="300dp"
-            android:layout_height="100dp"
-            android:layout_gravity="center"
-            android:background="@drawable/indonesia2" />
 
-        <LinearLayout
+        <EditText
+            android:id="@+id/dataSearch"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center">
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/round_border"
+            android:drawableStart="@drawable/ic_search"
+            android:drawablePadding="6dp"
+            android:fontFamily="@font/quicksand"
+            android:hint="Cari Propinsi "
+            android:textColor="@color/colorBlack" />
 
-            <ImageView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:background="@drawable/ic_search" />
-
-            <EditText
-                android:id="@+id/dataSearch"
-                android:layout_width="fill_parent"
-                android:fontFamily="@font/quicksand"
-                android:layout_height="wrap_content"
-                android:hint="Searching Province Name " />
-        </LinearLayout>
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rvProvince"
             android:layout_width="match_parent"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:background="@drawable/white_border"
             android:layout_height="wrap_content"
-
+            android:drawablePadding="16dp"
             tools:listitem="@layout/item_row_province" />
 
 

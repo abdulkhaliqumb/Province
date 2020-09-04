@@ -23,6 +23,7 @@
             android:src="@color/colorPrimaryDark"
             app:layout_constraintBottom_toTopOf="@+id/tvName"
             app:layout_constraintEnd_toEndOf="parent"
+            android:fontFamily="@font/quicksand_bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="1.0" />
@@ -47,6 +48,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="136dp"
             android:text="Email"
+            android:fontFamily="@font/quicksand"
             android:textAlignment="center"
             android:textSize="15sp"
             app:layout_constraintBottom_toBottomOf="parent"

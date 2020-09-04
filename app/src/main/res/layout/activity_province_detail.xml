@@ -15,98 +15,96 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <androidx.cardview.widget.CardView
+
+        <TableLayout
+            android:id="@+id/tableLayout0"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp">
 
-
-            <TextView
+            <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/quicksand"
-                android:text="Propinsi Indonesia"
-                android:textAlignment="center"
-                android:textSize="16sp"
-                tools:layout_editor_absoluteX="185dp"
-                tools:layout_editor_absoluteY="61dp" />
-
-            <TextView
-                android:id="@+id/tvNamaPropinsi"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:fontFamily="@font/quicksand_bold"
-                android:text="Papua"
-                android:textAlignment="center"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                tools:layout_editor_absoluteX="185dp"
-                tools:layout_editor_absoluteY="31dp" />
-        </androidx.cardview.widget.CardView>
-
-        <ImageView
-            android:id="@+id/tvImageProvince"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_gravity="center"
-            android:layout_margin="40dp"
-            android:textAlignment="center"
-            app:srcCompat="@drawable/papua_logo"
-            tools:layout_editor_absoluteX="153dp"
-            tools:layout_editor_absoluteY="103dp" />
+                android:layout_height="wrap_content">
 
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/quicksand_bold"
-            android:text="Keterangan"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            tools:layout_editor_absoluteX="43dp"
-            tools:layout_editor_absoluteY="286dp" />
+                <ImageView
+                    android:id="@+id/tvImageProvince"
+                    android:layout_width="129dp"
+                    android:layout_height="129dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/ic_bg_bayang"
+                    app:srcCompat="@drawable/papua_logo"
+                    tools:layout_editor_absoluteX="153dp"
+                    tools:layout_editor_absoluteY="103dp" />
 
-        <TextView
-            android:id="@+id/tvKeterangan"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:fontFamily="@font/quicksand"
-            android:justificationMode="inter_word"
-            android:text="Detail"
-            tools:layout_editor_absoluteX="43dp"
-            tools:layout_editor_absoluteY="286dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tvNamaPropinsi"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/quicksand_bold"
+                            android:justificationMode="inter_word"
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp"
+                            android:text="Papua"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            tools:layout_editor_absoluteX="185dp"
+                            tools:layout_editor_absoluteY="31dp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tvIbuKota"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/quicksand"
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp"
+                            android:text="xxxisi Luas" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tvLuas"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/quicksand"
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp"
+                            android:text="xxxisi Luas" />
+                    </TableRow>
+                </LinearLayout>
+            </TableRow>
+
+        </TableLayout>
 
 
         <TableLayout
             android:id="@+id/tableLayout1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="10dp">
+            android:layout_marginTop="16dp">
 
-            <TableRow
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-                <TextView
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/quicksand_bold"
-                    android:text="Luas"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:text=" :  " />
-
-                <TextView
-                    android:id="@+id/tvLuas"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:fontFamily="@font/quicksand"
-                    android:text="xxxisi Luas" />
-            </TableRow>
 
             <TableRow
                 android:layout_width="wrap_content"
@@ -157,29 +155,6 @@
                     android:text="xxxisi Luas sdaf sadj flskdjfvbxc dsaf  afafdas adfdasf  bvcbbcxvbbcxvbbcvbvcxbcvbbcvbvb" />
             </TableRow>
 
-            <TableRow
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-                <TextView
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/quicksand_bold"
-                    android:text="Ibu Kota"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text=" :  " />
-
-                <TextView
-                    android:id="@+id/tvIbuKota"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:fontFamily="@font/quicksand"
-                    android:text="xxxisi Luas" />
-            </TableRow>
 
             <TableRow
                 android:layout_width="wrap_content"
@@ -207,6 +182,28 @@
             </TableRow>
 
         </TableLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/quicksand_bold"
+            android:text="Keterangan"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="43dp"
+            tools:layout_editor_absoluteY="286dp" />
+
+        <TextView
+            android:id="@+id/tvKeterangan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/quicksand"
+            android:justificationMode="inter_word"
+            android:text="Detail"
+            tools:layout_editor_absoluteX="43dp"
+            tools:layout_editor_absoluteY="286dp" />
 
     </LinearLayout>
 

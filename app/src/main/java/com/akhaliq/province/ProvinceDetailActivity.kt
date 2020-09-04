@@ -1,9 +1,9 @@
 package com.akhaliq.province
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 
@@ -13,7 +13,7 @@ class ProvinceDetailActivity : AppCompatActivity() {
         setContentView(R.layout.activity_province_detail)
 
         val actionbar = supportActionBar
-        actionbar!!.title = "Detail Province"
+        actionbar!!.title = "    Detail Province"
         actionbar.setDisplayHomeAsUpEnabled(true)
 
 
@@ -39,16 +39,22 @@ class ProvinceDetailActivity : AppCompatActivity() {
 
 
         Glide.with(this)
-            .load(this.applicationContext.getResources().getIdentifier(imageProvince, "drawable", this.applicationContext.getPackageName()))
+            .load(
+                this.applicationContext.resources.getIdentifier(
+                    imageProvince,
+                    "drawable",
+                    this.applicationContext.packageName
+                )
+            )
             .apply(RequestOptions())
             .into(ivImageProvince)
 
         tvNamaPropinsi.text = namaPropinsi
         tvKeterangan.text = keterangan
-        tvLuas.text = luas
+        tvLuas.text = "Luas " + luas
         tvLaguDaerah.text = laguDaerah
         tvJumlahSatuanPemerintahan.text = jumlahSatuanPemerintahan
-        tvIbuKota.text = ibuKota
+        tvIbuKota.text = "Ibu Kota " + ibuKota
         tvHariJadi.text = hariJadi
 
 

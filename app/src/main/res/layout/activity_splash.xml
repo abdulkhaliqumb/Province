@@ -1,43 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="10dp"
-    android:background="@color/colorWhite"
-    android:orientation="vertical"
+    android:background="@drawable/ic_splash_screen"
     tools:context=".SplashActivity">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="309dp"
-            android:layout_height="209dp"
-            android:layout_marginTop="224dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/indonesia2" />
+        <View
+            android:id="@+id/viewBg"
+            android:layout_width="match_parent"
+            android:layout_height="301dp"
+            android:padding="16dp" />
 
         <TextView
-            android:id="@+id/textView"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:fontFamily="@font/quicksand_bold"
-            android:text="Propinsi Indonesia"
+            android:text="PROPINSI"
             android:textAlignment="center"
-            android:textSize="20dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView"
-            app:layout_constraintVertical_bias="1.0"
-            tools:text="Propinsi Indonesia" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            android:textColor="@color/colorWhite"
+            android:textSize="26dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="282dp"
+            android:layout_height="104dp"
+            android:layout_gravity="center"
+            android:layout_margin="16dp"
+            android:background="@drawable/indonesia3" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/quicksand_bold"
+            android:text="INDONESIA"
+            android:textAlignment="center"
+            android:textColor="@color/colorRed"
+
+            android:textSize="29dp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
 </ScrollView>
