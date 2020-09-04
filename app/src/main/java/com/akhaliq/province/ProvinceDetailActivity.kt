@@ -13,7 +13,7 @@ class ProvinceDetailActivity : AppCompatActivity() {
         setContentView(R.layout.activity_province_detail)
 
         val actionbar = supportActionBar
-        actionbar!!.title = "    Detail Province"
+        actionbar!!.title = "Detail Propinsi"
         actionbar.setDisplayHomeAsUpEnabled(true)
 
 
