@@ -29,8 +29,8 @@
 
     <RelativeLayout
         android:layout_width="wrap_content"
-        android:background="@color/colorWhite"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite">
 
 
         <LinearLayout
@@ -40,11 +40,11 @@
 
             <TextView
                 android:id="@+id/tvNamaPropinsi"
-                android:fontFamily="@font/quicksand_bold"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"
                 android:layout_marginTop="8dp"
+                android:fontFamily="@font/quicksand_bold"
                 android:text="Propinsi "
                 android:textSize="16sp"
                 android:textStyle="bold" />
@@ -61,8 +61,8 @@
                 android:id="@+id/tvLuas"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/quicksand"
                 android:layout_marginLeft="8dp"
+                android:fontFamily="@font/quicksand"
                 android:text="Jayapura " />
 
         </LinearLayout>

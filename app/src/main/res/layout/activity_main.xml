@@ -61,10 +61,10 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rvProvince"
             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="18dp"
             android:layout_marginRight="18dp"
             android:background="@drawable/white_border"
-            android:layout_height="wrap_content"
             android:drawablePadding="16dp"
             tools:listitem="@layout/item_row_province" />
 
