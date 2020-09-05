@@ -1,6 +1,5 @@
 package com.akhaliq.province
 
-import android.content.Intent
 import android.graphics.Color
 import android.os.Build
 import android.os.Bundle
@@ -23,7 +22,7 @@ open class BaseActivity : AppCompatActivity() {
     protected open fun setWhiteStatusBar() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR
-            window.statusBarColor = Color.WHITE
+            window.statusBarColor = Color.parseColor("#FFAB0007")
         }
     }
 

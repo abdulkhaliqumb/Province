@@ -6,13 +6,15 @@ import android.text.Editable
 import android.text.TextWatcher
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
+import android.widget.Button
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(), View.OnClickListener {
     private lateinit var rvProvince: RecyclerView
     private var listFilter: ArrayList<Province> = arrayListOf()
     private var listResult: ArrayList<Province> = arrayListOf()
@@ -21,21 +23,26 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        val actionbar = supportActionBar
-        actionbar!!.title = "List Propinsi"
+
+        supportActionBar?.hide()
 
         val dataSearch: EditText = findViewById(R.id.dataSearch)
+        val about: Button = findViewById(R.id.btn_About)
+
         rvProvince = findViewById(R.id.rvProvince)
         rvProvince.setHasFixedSize(true)
 
         dataSearch.addTextChangedListener(textWatcher)
 
         //check if the EditText have values or not
-        msg= dataSearch.text.toString()
-        if(msg.trim().length<1){
+        msg = dataSearch.text.toString()
+        if (msg.trim().isEmpty()) {
             listResult.addAll(ProvinceData.listData)
             showRecyclerList()
         }
+        about.setOnClickListener(this)
+
+
     }
 
 
@@ -83,13 +90,25 @@ class MainActivity : AppCompatActivity() {
             listFilter.addAll(ProvinceData.listData)
             var datatemp:String
             for (data in listFilter) {
-                datatemp=data.namaPropinsi.toLowerCase()
+                datatemp = data.namaPropinsi.toLowerCase()
                 if (datatemp.contains(s.toString().toLowerCase())) {
-                     listResult.add(data)}
+                    listResult.add(data)
                 }
-              showRecyclerList()
             }
-
-
+            showRecyclerList()
         }
+
+
+    }
+
+    override fun onClick(v: View?) {
+
+        when (v?.id) {
+            R.id.btn_About -> {
+                val iAbout = Intent(this@MainActivity, AboutActivity::class.java)
+                startActivity(iAbout)
+
+            }
+        }
+    }
 }
