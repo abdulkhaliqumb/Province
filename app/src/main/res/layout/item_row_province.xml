@@ -9,9 +9,9 @@
     <androidx.cardview.widget.CardView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
+        android:layout_margin="8dp"
         app:cardCornerRadius="14dp"
-        app:cardElevation="10dp">
+        app:cardElevation="6dp">
 
 
         <ImageView
@@ -43,6 +43,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"
+                android:textColor="@color/colorBlack"
                 android:layout_marginTop="8dp"
                 android:fontFamily="@font/quicksand_bold"
                 android:text="Propinsi "
@@ -54,6 +55,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"
+                android:textColor="@color/colorBlack"
                 android:fontFamily="@font/quicksand"
                 android:text="Jayapura " />
 
@@ -63,6 +65,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"
                 android:fontFamily="@font/quicksand"
+                android:textColor="@color/colorBlack"
                 android:text="Jayapura " />
 
         </LinearLayout>
