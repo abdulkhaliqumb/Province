@@ -3,7 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginTop="10dp"
     android:background="@color/colorWhite"
     android:orientation="vertical"
     tools:context=".MainActivity">
@@ -12,6 +11,7 @@
         android:id="@+id/activity_main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@color/colorWhite"
         android:orientation="vertical">
 
         <RelativeLayout
@@ -20,11 +20,13 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
+            android:background="@color/colorWhite"
             android:orientation="horizontal">
 
             <TextView
-                android:layout_width="fill_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="40dp"
+                android:layout_centerInParent="true"
                 android:layout_marginEnd="16dp"
                 android:drawablePadding="6dp"
                 android:fontFamily="@font/quicksand_bold"
@@ -37,7 +39,8 @@
                 android:id="@+id/btn_About"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:background="@drawable/ic_person"></Button>
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/ic_person" />
 
         </RelativeLayout>
 
@@ -45,13 +48,13 @@
             android:id="@+id/dataSearch"
             android:layout_width="fill_parent"
             android:layout_height="40dp"
-            android:layout_marginLeft="18dp"
-            android:layout_marginRight="18dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
             android:background="@drawable/round_border"
             android:drawableStart="@drawable/ic_search"
             android:fontFamily="@font/quicksand"
             android:hint="Cari Propinsi "
-            android:paddingStart="6dp"
+            android:paddingStart="8dp"
             android:textColor="@color/colorBlack" />
 
 
@@ -59,6 +62,7 @@
             android:id="@+id/rvProvince"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+
             android:layout_marginLeft="18dp"
             android:layout_marginRight="18dp"
             android:background="@drawable/white_border"
